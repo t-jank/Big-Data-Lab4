@@ -15,7 +15,7 @@ def distance(p1,p2):
     n=len(p1)
     suma=0
     for i in range(0,n):
-        suma=(p1[i]-p2[i])**2
+        suma+=(p1[i]-p2[i])**2
     return math.sqrt(suma)
 
 def distances(points):
@@ -29,7 +29,7 @@ def distances(points):
             distances.append(distance(points[i],points[j]) / sqn)            
     return distances
 
-n=1  # 1, 10, 100, 1000, 10000
+n=10000  # 1, 10, 100, 1000, 10000
 k=100
 
 X=Points(n,k)
